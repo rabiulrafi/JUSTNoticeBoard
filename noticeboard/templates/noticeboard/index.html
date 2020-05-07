@@ -1,0 +1,204 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>{% block title %}JUST Notice Board{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="{% static 'css/style.css' %}">
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="p-4 pt-5">
+		  		<a href="#" class="img logo rounded-circle mb-5" style="background-image: url(media/images/logo.jpg);"></a>
+	        <ul class="list-unstyled components mb-5">
+            <li>Facuty Of:</li>
+    	          <li class="active">
+    	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="font-size: 15px">ENGINEERING AND TECHNOLOGY</a>
+    	            <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="#">CSE</a>
+                    </li>
+                    <li>
+                        <a href="#">EEE</a>
+                    </li>
+                    <li>
+                        <a href="#">PME</a>
+                    </li>
+                    <li>
+                        <a href="#">BME</a>
+                    </li>
+                    <li>
+                        <a href="#">TE</a>
+                    </li>
+                    <li>
+                        <a href="#">ChE</a>
+                    </li>
+    	            </ul>
+    	          </li>
+
+             <li>
+              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="font-size: 13px">APPLIED SCIENCE AND TECHNOLOGY</a>
+              <ul class="collapse list-unstyled" id="pageSubmenu">
+                <li>
+                    <a href="#">EST</a>
+                </li>
+                <li>
+                    <a href="#">NFT</a>
+                </li>
+                <li>
+                    <a href="#">APPT</a>
+                </li>
+                <li>
+                    <a href="#">CDM</a>
+                </li>
+              </ul>
+            </li>
+
+              <li>
+              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="font-size: 13px">BIOLOGICAL SCIENCE & TECHNOLOGY</a>
+              <ul class="collapse list-unstyled" id="pageSubmenu">
+                <li>
+                    <a href="#">FMB</a>
+                </li>
+                <li>
+                    <a href="#">GEBT</a>
+                </li>
+                <li>
+                    <a href="#">Pharmacy</a>
+                </li>
+                <li>
+                    <a href="#">MB</a>
+                </li>
+              </ul>
+            </li>
+
+             <li>
+              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="font-size: 13px">HEALTH SCIENCE</a>
+              <ul class="collapse list-unstyled" id="pageSubmenu">
+                <li>
+                    <a href="#">PESS</a>
+                </li>
+                <li>
+                    <a href="#">NHS</a>
+                </li>
+                <li>
+                    <a href="#">PR</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="font-size: 13px" >ARTS AND SOCIAL SCIENCE</a>
+              <ul class="collapse list-unstyled" id="pageSubmenu">
+                <li>
+                    <a href="#">English</a>
+                </li>
+              </ul>
+            </li>
+
+              <li>
+              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="font-size: 13px">BUSINESS STUDIES</a>
+              <ul class="collapse list-unstyled" id="pageSubmenu">
+                <li>
+                    <a href="#">AIS</a>
+                </li>
+                <li>
+                    <a href="#">Management</a>
+                </li>
+                <li>
+                    <a href="#">F&B</a>
+                </li>
+                  <li>
+                    <a href="#">Marketing</a>
+                </li>
+              </ul>
+            </li>
+
+
+	          <li>
+	              <a href="#">About</a>
+	          </li>
+	          
+	        </ul>
+
+	        <div class="footer">
+	        	<p>
+						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by Rabiul Rafi, Computer Science and Engineering<br><a href="https://just.edu.bd/department/cse" target="_blank">just.cse.com</a>
+						</p>
+	        </div>
+
+	      </div>
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+              <i class="fa fa-bars"></i>
+              <span class="sr-only">Toggle Menu</span>
+            </button>
+            <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><strong>Home</strong> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><strong>About</strong> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><strong>Login</strong> </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <h2 class="mb-4">Latest Notice</h2>
+       <table class="table table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Title</th>
+                  <th scope="col">Department</th>
+                  <th scope="col">Publish Date</th>
+                  <th scope="col">Download</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Notice on Registration date extension for Summer 2020</td>
+                  <td>CSE</td>
+                  <td>07 May, 2020</td>
+                  <td><a href="#">Download</a></td>
+                </tr>
+                 <tr>
+                  <th scope="row">1</th>
+                  <td>Notice on Registration date extension for Summer 2020</td>
+                  <td>CSE</td>
+                  <td>07 May, 2020</td>
+                  <td><a href="#">Download</a></td>
+                </tr>
+              </tbody>
+          </table>
+      </div>
+		</div>
+
+   <!--  <script src="js/jquery.min.js"></script> -->
+    <script src="{% static 'js/jquery.min.js' %} "></script>
+    <script src="{% static 'js/popper.js' %}"></script>
+    <script src="{%static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>
