@@ -4,6 +4,8 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+ 
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -4200,6 +4202,7 @@ input[type="button"].btn-block {
     box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5); }
 
 .jumbotron {
+  background-size: 100% 100%;
   padding: 2rem 1rem;
   margin-bottom: 2rem;
   background-color: #e9ecef;

@@ -5,6 +5,8 @@
   	<title>{% block title %}JUST Notice Board{% endblock %}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="{% static 'css/style.css' %}">
@@ -14,29 +16,29 @@
 		<div class="wrapper d-flex align-items-stretch">
 			<nav id="sidebar">
 				<div class="p-4 pt-5">
-		  		<a href="#" class="img logo rounded-circle mb-5" style="background-image: url({% static 'images/logo.jpg' %});"></a>
+		  		<a href="{%url 'index'%} " class="img logo rounded-circle mb-5" style="background-image: url({% static 'images/logo.jpg' %});"></a>
 	        <ul class="list-unstyled components mb-5">
             <li>Facuty Of:</li>
     	          <li class="active">
     	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="font-size: 15px">ENGINEERING AND TECHNOLOGY</a>
     	            <ul class="collapse list-unstyled" id="homeSubmenu">
                     <li>
-                        <a href="#">CSE</a>
+                        <a href="{%url 'dept' 'CSE' %}">CSE</a>
                     </li>
                     <li>
-                        <a href="#">EEE</a>
+                        <a href="{%url 'dept' 'EEE' %}">EEE</a>
                     </li>
                     <li>
-                        <a href="#">PME</a>
+                        <a href="{%url 'dept' 'PME' %}">PME</a>
                     </li>
                     <li>
-                        <a href="#">BME</a>
+                        <a href="{%url 'dept' 'BME' %}">BME</a>
                     </li>
                     <li>
-                        <a href="#">TE</a>
+                        <a href="{%url 'dept' 'TE' %}">TE</a>
                     </li>
                     <li>
-                        <a href="#">ChE</a>
+                        <a href="{%url 'dept' 'ChE' %}">ChE</a>
                     </li>
     	            </ul>
     	          </li>
@@ -45,16 +47,16 @@
               <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="font-size: 13px">APPLIED SCIENCE AND TECHNOLOGY</a>
               <ul class="collapse list-unstyled" id="pageSubmenu">
                 <li>
-                    <a href="#">EST</a>
+                    <a href="{%url 'dept' 'EST' %}">EST</a>
                 </li>
                 <li>
-                    <a href="#">NFT</a>
+                    <a href="{%url 'dept' 'NFT' %}">NFT</a>
                 </li>
                 <li>
-                    <a href="#">APPT</a>
+                    <a href="{%url 'dept' 'APPT' %}">APPT</a>
                 </li>
                 <li>
-                    <a href="#">CDM</a>
+                    <a href="{%url 'dept' 'CDM' %}">CDM</a>
                 </li>
               </ul>
             </li>
@@ -63,16 +65,16 @@
               <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="font-size: 13px">BIOLOGICAL SCIENCE & TECHNOLOGY</a>
               <ul class="collapse list-unstyled" id="pageSubmenu">
                 <li>
-                    <a href="#">FMB</a>
+                    <a href="{%url 'dept' 'FMB' %}">FMB</a>
                 </li>
                 <li>
-                    <a href="#">GEBT</a>
+                    <a href="{%url 'dept' 'GEBT' %}">GEBT</a>
                 </li>
                 <li>
-                    <a href="#">Pharmacy</a>
+                    <a href="{%url 'dept' 'Pharmacy' %}">Pharmacy</a>
                 </li>
                 <li>
-                    <a href="#">MB</a>
+                    <a href="{%url 'dept' 'MB' %}">MB</a>
                 </li>
               </ul>
             </li>
@@ -81,13 +83,13 @@
               <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="font-size: 13px">HEALTH SCIENCE</a>
               <ul class="collapse list-unstyled" id="pageSubmenu">
                 <li>
-                    <a href="#">PESS</a>
+                    <a href="{%url 'dept' 'PESS' %}">PESS</a>
                 </li>
                 <li>
-                    <a href="#">NHS</a>
+                    <a href="{%url 'dept' 'NHS' %}">NHS</a>
                 </li>
                 <li>
-                    <a href="#">PR</a>
+                    <a href="{%url 'dept' 'PR' %}">PR</a>
                 </li>
               </ul>
             </li>
@@ -95,7 +97,7 @@
               <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="font-size: 13px" >ARTS AND SOCIAL SCIENCE</a>
               <ul class="collapse list-unstyled" id="pageSubmenu">
                 <li>
-                    <a href="#">English</a>
+                    <a href="{%url 'dept' 'English' %}">English</a>
                 </li>
               </ul>
             </li>
@@ -104,16 +106,16 @@
               <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="font-size: 13px">BUSINESS STUDIES</a>
               <ul class="collapse list-unstyled" id="pageSubmenu">
                 <li>
-                    <a href="#">AIS</a>
+                    <a href="{%url 'dept' 'AIS' %}">AIS</a>
                 </li>
                 <li>
-                    <a href="#">Management</a>
+                    <a href="{%url 'dept' 'Management' %}">Management</a>
                 </li>
                 <li>
-                    <a href="#">F&B</a>
+                    <a href="{%url 'dept' 'F&B' %}">F&B</a>
                 </li>
                   <li>
-                    <a href="#">Marketing</a>
+                    <a href="{%url 'dept' 'Marketing' %}">Marketing</a>
                 </li>
               </ul>
             </li>
@@ -127,7 +129,7 @@
 
 	        <div class="footer">
 	        	<p>
-						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by Rabiul Rafi, Computer Science and Engineering<br><a href="https://just.edu.bd/department/cse" target="_blank">just.cse.com</a>
+						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved<i class="icon-heart" aria-hidden="true"></i><p style="color: #ffffff"> <strong>Rabiul Rafi</strong></p> <P>Computer Science and Engineering  <br><a href="https://just.edu.bd/department/cse" target="_blank">just.cse.com</a></P>
 						</p>
 	        </div>
 
@@ -137,13 +139,17 @@
         <!-- Page Content  -->
       <div id="content" class="p-4 p-md-5">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-lg rounded">
           <div class="container-fluid">
 
             <button type="button" id="sidebarCollapse" class="btn btn-primary">
               <i class="fa fa-bars"></i>
               <span class="sr-only">Toggle Menu</span>
             </button>
+            <a class="navbar-brand" href="#">
+          <img src="{% static 'images/lg.png' %}" width="200px" height="50px" class="d-inline-block align-top" alt="">
+            </a>
+      
             <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars"></i>
             </button>
@@ -158,19 +164,38 @@
                 </li>
                 {% if user.is_authenticated%}
                   <li class="nav-item">
-                      <a class="nav-link" href="{% url 'upload'%}"><strong>Upload</strong> </a>
+                      <a class="nav-link" href="{% url 'upload' %}"><strong>Upload</strong> </a>
                   </li>
                 {%endif%}
+
+                {% if not user.is_authenticated%}
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><strong>Login</strong> </a>
+                    <a class="nav-link" href="{%url 'login'%} "><strong>Login</strong> </a>
                 </li>
+                {%endif%}
+                {% if user.is_authenticated%}
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><strong>Logout</strong> </a>
+                    <a class="nav-link" href="{%url 'logout' %}"><strong>Logout</strong> </a>
                 </li>
+                {%endif%}
               </ul>
             </div>
           </div>
         </nav>
+
+        <div class="jumbotron " style="background: url({% static 'images/bg.webp' %} ) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+        <!-- <h1 class="display-4" style="color: #ffffff; font-family: ">JUST Central Notice Board</h1> -->
+          
+          <h1 style="font-family: 'Montserrat Subrayada', sans-serif; text-align: center; color: #ffffff; font-size: 50px; background-color: #575b63; opacity: .7">JUST 
+            <span
+               class="txt-rotate"
+               data-period="2000"
+               data-rotate='["Notice Board."]'></span>
+          </h1>
+        
+        <hr class="my-4">
+        
+      </div>  
         {%block content%}
         <h2 class="mb-4">Latest Notice</h2>
         <div class="table-responsive-sm ">
@@ -198,10 +223,87 @@
           </table>
           </div>
         {%endblock%}
+
+
+        <div class="pagination justify-content-center">
+        <div class="section-inner clearfix">
+            <p>
+                {% if notices.has_previous %}
+                    <a href="?page={{ notices.previous_page_number }} " class="btn btn-primary">< Prev</a> |
+                {% endif %}
+
+                {% if notices.has_next %}
+                    <a href="?page={{ notices.next_page_number }}" class="btn btn-primary" >Next ></a>
+                {% endif %}
+
+                <span>Page {{ notices.number }} of {{ notices.paginator.num_pages }}</span>
+            </p>
+        </div>
+        </div>
+
       </div>
+
 		</div>
 
    <!--  <script src="js/jquery.min.js"></script> -->
+   <script type="text/javascript">
+     var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 300 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css);
+};
+   </script>
     <script src="{% static 'js/jquery.min.js' %} "></script>
     <script src="{% static 'js/popper.js' %}"></script>
     <script src="{%static 'js/bootstrap.min.js' %}"></script>
