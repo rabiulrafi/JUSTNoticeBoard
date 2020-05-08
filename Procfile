@@ -1,0 +1,1 @@
+web: gunicorn JUSTNoticeBoard.wsgi --log-file -
